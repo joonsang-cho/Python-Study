@@ -1,23 +1,24 @@
-#Write a Python program to print all even numbers from a given numbers list in the same order and stop the printing if any numbers that come after 237 in the sequence.
-#Sample numbers list :
-#numbers = [
+# Write a Python program to print all even numbers from a given numbers list in the same order and
+# stop the printing if any numbers that come after 237 in the sequence.
+# Sample numbers list :
+# numbers = [
 #    386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
 #    399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
 #    815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
 #    958,743, 527 ]
 
 numbers = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
-        399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
-        815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
-        958,743, 527]
-n = int(numbers.index(237))
-list = numbers[n + 1:]
-a=0
-
+           399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
+           815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
+           958, 743, 527]
+list=[]
 if __name__ == '__main__':
-    for i in list:
-        if i%2==0:
-
+    for num in numbers:
+        if num == 237:
+            break
+        else:
+            if num % 2 == 0:
+                list.append(num)
+            else:
+                continue
     print(list)
-    print(a)
-    print(list[a]%2)
