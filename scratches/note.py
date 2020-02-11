@@ -1,6 +1,3 @@
-#Write a Python program to create all possible strings
-#by using 'a', 'e', 'i', 'o', 'u'. Use the characters exactly once.
-
 def generate(t):
     permutation(t, 0, len(t) - 1)
 
