@@ -1,17 +1,13 @@
-def star(n):
-    n = int(n)
-    if n == 1:
-        ans = ["*", "*", "*"]
-        return ans
+n=int(input())
+pool =[]
+a = 666
+while True:
+    if len(pool) == n:
+        break
     else:
-        temp=[]
-        a = star(n / 3)
-        for i in range(n):
-            if int(i/(n/3)) == 1 :
-                temp.append(a[i%int(n/3)]+' '*int(n/3)+a[i%int(n/3)])
-            else:
-                temp.append(a[i%int(n/3)]*3)
-        ans = list(temp)
-        temp = list()
-        return ans
-print('\n'.join(star(int(input()))))
+        if '666'in str(a):
+            pool.append(a)
+            a +=1
+        else:
+            a += 1
+print(max(pool))
